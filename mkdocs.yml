@@ -1,0 +1,58 @@
+site_name: Sample web site
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/apps
+    repo: fontawesome/brands/git-alt
+  favicon: assets/images/favicon.svg
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+
+# Navigation
+nav:
+  - Home: index.md
+  - About: 
+    - About: article/about/about.md
+    - Profile: article/about/profile.md
+  - Tab1:
+    - Page1: article/tab_1/page_01.md
+    - Page2: article/tab_1/page_02.md
+    - Page3: article/tab_1/page_03.md
+  - Tab2:
+    - Page4: article/tab_2/page_04.md
+    - Page5: article/tab_2/page_05.md
+    - Page6: article/tab_2/page_06.md
+  - Blog:
+    - 2022:
+      - 2022/07/01: article/blog/2022/20220701.md
+      - 2022/07/15: article/blog/2022/20220715.md
+    - 2021:
+      - 2021/12/31: article/blog/2021/20211231.md
+
+markdown_extensions:
+    - admonition
+    - fontawesome_markdown
+    - codehilite:
+        linenums: true
+        guess_lang: false
+        use_pygments: false
+        noclasses: true
+    - toc:
+        permalink: true
+
+# Extra CSS
+extra_css:
+  - css/custom.css
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+
+
+# Enable Serch
+plugins:
+  - search:
+      lang: en
+
+# Copyright
+copyright: "Copyright © 2022 - kdmfht"
